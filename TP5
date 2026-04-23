@@ -1,0 +1,79 @@
+// Exercice1
+let a = Number(prompt("doone le premier nombre:"));
+let b = Number(prompt("doone la deuxieme nombre:"));
+console.log("la somme est:"+(a+b));
+console.log("la diference est:"+(a-b));
+console.log("le produie est:"+(a*b));
+console.log("la divesion est:"+(a/b));
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script src="test1.js"></script>
+</body>
+</html>
+
+// Exercice3
+let QUESTIONS = [
+    ["Quelle est la capitale de la France ?", "Paris"],
+    [" 5 + 5 ?", "10"],
+];
+function lancerQuiz() {
+    let X = 0;
+    for (let i = 0; i < QUESTIONS.length; i++) {
+        let reponse = prompt(QUESTIONS[i][0]);
+        if (reponse === QUESTIONS[i][1]) {
+            window.alert("Vrai");
+            X = X + 1;
+        } else {
+            window.alert("Faux");
+        }
+    }
+    window.alert("Vous avez répondu à " +X+ " sur " + QUESTIONS.length + " questions correctement.");
+}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Quiz Interactif</h2>
+    <button onclick="lancerQuiz()">Start Quiz</button>
+    <script src="exercice3.js"></script>
+</body>
+</html>
+
+//Exercice2
+let n=Math.floor(Math.random()*10)+1;
+let x;
+let t=0;
+do  {
+    x=Number(prompt("donne le nobre entre 1 et 10:"));
+    t=t+1;
+    if (x < nombre){
+    alert("plus grand");}
+    if (x > nombre){ 
+        alert("plus petit");}
+        }
+        while(x != n);
+        alert (" bravo");
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script src="test2.js"></script>
+</body>
+</html>
